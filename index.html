@@ -25,45 +25,70 @@
   <meta property="og:type" content="website" />
 </head>
 
-  <body>
-    <header>
-      <h1>Your Name</h1>
-      <p>
-        <a href="mailto:you@example.com">you@example.com</a> ·
-        <a href="tel:+11234567890">(123) 456-7890</a> ·
-        Your City, State
-      </p>
-    </header>
+ <body>
+  <div class="container">
+    <main class="card">
 
-    <main>
-      <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
-        <article>
-          <h3>School Name</h3>
-          <p>Degree / Program — Graduation Year</p>
-        </article>
-      </section>
+      <header class="header">
+        <div>
+          <h1>Your Name</h1>
+          <p class="tagline">Single-page CV — education, skills, and experience.</p>
+        </div>
 
-      <section aria-labelledby="skills">
-        <h2 id="skills">Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
+        <div class="contact">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="tel:+11234567890">(123) 456-7890</a>
+          <span>Your City, State</span>
+        </div>
+      </header>
 
-      <section aria-labelledby="experience">
-        <h2 id="experience">Career History</h2>
-        <article>
-          <h3>Job Title — Company</h3>
-          <p><time datetime="2024-01">Jan 2024</time> – <time datetime="2025-12">Dec 2025</time></p>
-          <ul>
-            <li>Achievement or responsibility</li>
-            <li>Achievement or responsibility</li>
-          </ul>
-        </article>
-      </section>
+      <div class="grid">
+        <!-- Left column -->
+        <section>
+          <section class="section" aria-labelledby="education">
+            <h2 id="education">Education</h2>
+            <div class="item">
+              <p class="role">School Name</p>
+              <p class="meta">Degree / Program — Graduation Year</p>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="experience">
+            <h2 id="experience">Career History</h2>
+
+            <div class="item">
+              <div class="row">
+                <div>
+                  <p class="role">Job Title — Company</p>
+                  <p class="meta">Your City, State</p>
+                </div>
+                <div class="date">
+                  <time datetime="2024-01">Jan 2024</time> – <time datetime="2025-12">Dec 2025</time>
+                </div>
+              </div>
+
+              <ul>
+                <li>Achievement or responsibility</li>
+                <li>Achievement or responsibility</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <!-- Right column -->
+        <aside>
+          <section class="section" aria-labelledby="skills">
+            <h2 id="skills">Skills</h2>
+            <div class="pills">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </section>
+        </aside>
+      </div>
+
     </main>
-  </body>
+  </div>
+</body>
 </html>
